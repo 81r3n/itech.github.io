@@ -434,16 +434,16 @@ $(document).ready(function() {
 
 
 // case studies
-gsap.registerPlugin(ScrollTrigger);
-gsap.utils.toArray(".pinPanel").forEach((panel, i) => {
-    ScrollTrigger.create({
-        trigger: panel,
-        start: "top top",
-        pin: true,
-        pinSpacing: false,
-        scrub: 2
-    });
-});
+// gsap.registerPlugin(ScrollTrigger);
+// gsap.utils.toArray(".pinPanel").forEach((panel, i) => {
+//     ScrollTrigger.create({
+//         trigger: panel,
+//         start: "top top",
+//         pin: true,
+//         pinSpacing: false,
+//         scrub: 2
+//     });
+// });
 var tl = gsap.timeline({
     scrollTrigger: {
         trigger: ".pinWrapper",
@@ -554,7 +554,7 @@ $(document).ready(function() {
         nav: false,
         smartSpeed: 4000,
         autoplay: true,
-        autoplayTimeout: 4000,
+        autoplayTimeout: 3000,
         items: 6
     })
 

@@ -754,7 +754,7 @@ right: 0;
     transform: scale(0.9);
 }
 
-
+/*case studies*/
 .wrapper {
     min-height: 100vh;
     background: rgba(21, 48, 72, 1.0);
@@ -763,7 +763,6 @@ right: 0;
     background-size: cover;
     overflow: hidden;
     background-attachment: fixed;
-    padding-bottom: 7%;
 }
 
 .factsContainer {
@@ -843,6 +842,89 @@ a.cstudy:hover {
     height: 100vh;
 }
 
+/*news room / blog*/
+
+figure.snip1208 {
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+
+    background-color: #ffffff;
+    color: #000000;
+    text-align: left;
+    font-size: 16px;
+}
+
+
+
+figure.snip1208 img {
+    max-width: 100%;
+    vertical-align: top;
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+figure.snip1208 figcaption {
+    padding: 25px;
+    position: relative;
+}
+
+
+figure.snip1208 h3,
+figure.snip1208 p {
+    margin: 0;
+    padding: 0;
+}
+
+figure.snip1208 h3 {
+    margin-bottom: 10px;
+    display: inline-block;
+    font-weight: 400;
+    color: #333333;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+figure.snip1208 p {
+    font-size: 0.8em;
+    margin-bottom: 20px;
+    line-height: 1.6em;
+}
+
+figure.snip1208 button {
+    border: medium none;
+    padding: 10px 20px;
+    background-color: #1abc9c;
+    font-weight: 800;
+    color: #ffffff;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 0.8em;
+}
+
+figure.snip1208 a {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    z-index: 1;
+}
+
+figure.snip1208:hover img,
+figure.snip1208.hover img {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+
+
+figure.snip1208:hover button,
+figure.snip1208.hover button {
+    background-color: #117964;
+}
 
 /*footer*/
 footer h3 {
