@@ -517,7 +517,7 @@ scroll_tl.to(facts, {
 gsap.registerPlugin(ScrollTrigger);
 
 gsap.to("#logo", {
-    duration: 0.5,
+    duration: 0.1,
     // backgroundColor: "#dbf5f7",
     opacity: 0,
 
@@ -525,24 +525,118 @@ gsap.to("#logo", {
     scrollTrigger: {
         trigger: "#partner",
         toggleActions: "play none reset reverse",
-        start: "top 30%",
+        start: "center center",
         end: "bottom bottom",
         // markers: true
     }
 });
+gsap.to("#logo2", {
+    duration: 0.1,
+    // backgroundColor: "#dbf5f7",
+    opacity: 1,
 
+
+    scrollTrigger: {
+        trigger: "#partner",
+        toggleActions: "play none reset reverse",
+        start: "center center",
+        end: "bottom bottom",
+        // markers: true
+    }
+});
 gsap.to("#logo", {
-    duration: 1,
+    duration: 0.1,
     ease: "power3.out",
     opacity: 1,
     scrollTrigger: {
         trigger: ".case_study_card",
         start: "top bottom",
-        toggleActions: "restart reverse reverse reverse",
-        markers: "true"
+        toggleActions: "restart reverse reverse reverse"
+        // markers: "true"
     }
 
 });
+gsap.to("#logo2", {
+    duration: 0.1,
+    ease: "power3.out",
+    opacity: 0,
+    scrollTrigger: {
+        trigger: ".case_study_card",
+        start: "top bottom",
+        toggleActions: "restart reverse reverse reverse"
+        // markers: "true"
+    }
+
+});
+gsap.to("#logo", {
+    duration: 0.1,
+    ease: "power3.out",
+    opacity: 0,
+    scrollTrigger: {
+        trigger: ".newsroom",
+        start: "center center",
+        toggleActions: "restart reverse reverse reverse"
+        // markers: "true"
+    }
+
+});
+gsap.to("#logo2", {
+    duration: 0.1,
+    ease: "power3.out",
+    opacity: 1,
+    scrollTrigger: {
+        trigger: ".newsroom",
+        start: "center center",
+        toggleActions: "restart reverse reverse reverse"
+        // markers: "true"
+    }
+
+});
+gsap.to("#logo", {
+    duration: 0.1,
+    ease: "power3.out",
+    opacity: 1,
+    scrollTrigger: {
+        trigger: ".footer",
+        start: "center center",
+        toggleActions: "restart reverse reverse reset"
+        // markers: "true"
+    }
+
+});
+gsap.to("#logo2", {
+    duration: 0.1,
+    ease: "power3.out",
+    opacity: 0,
+    scrollTrigger: {
+        trigger: ".footer",
+        start: "center center",
+        toggleActions: "restart reverse reverse reset"
+        // markers: "true"
+    }
+
+});
+
+// news room
+
+
+gsap.from(".newsContainer", {
+    duration: 3,
+    // backgroundColor: "#dbf5f7",
+    opacity: 0,
+    y: 50,
+    ease: "power1.out",
+
+
+    scrollTrigger: {
+        trigger: ".newsroom",
+        toggleActions: "play none reset reverse",
+        start: "top center",
+        markers: true
+    }
+});
+
+
 
 
 // owl carousel
