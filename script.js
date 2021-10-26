@@ -567,30 +567,30 @@ gsap.to("#logo2", {
     }
 
 });
-gsap.to("#logo", {
-    duration: 0.1,
-    ease: "power3.out",
-    opacity: 0,
-    scrollTrigger: {
-        trigger: ".newsroom",
-        start: "center center",
-        toggleActions: "restart reverse reverse reverse"
-        // markers: "true"
-    }
+// gsap.to("#logo", {
+//     duration: 0.1,
+//     ease: "power3.out",
+//     opacity: 0,
+//     scrollTrigger: {
+//         trigger: ".newsroom",
+//         start: "center center",
+//         toggleActions: "restart reverse reverse reverse"
+//         // markers: "true"
+//     }
 
-});
-gsap.to("#logo2", {
-    duration: 0.1,
-    ease: "power3.out",
-    opacity: 1,
-    scrollTrigger: {
-        trigger: ".newsroom",
-        start: "center center",
-        toggleActions: "restart reverse reverse reverse"
-        // markers: "true"
-    }
+// });
+// gsap.to("#logo2", {
+//     duration: 0.1,
+//     ease: "power3.out",
+//     opacity: 1,
+//     scrollTrigger: {
+//         trigger: ".newsroom",
+//         start: "center center",
+//         toggleActions: "restart reverse reverse reverse"
+//         // markers: "true"
+//     }
 
-});
+// });
 gsap.to("#logo", {
     duration: 0.1,
     ease: "power3.out",
@@ -620,18 +620,19 @@ gsap.to("#logo2", {
 
 
 gsap.from(".newsContainer", {
-    duration: 3,
+    duration: 2,
     // backgroundColor: "#dbf5f7",
     opacity: 0,
     y: 50,
-    ease: "power1.out",
+    ease: "power3.out",
+    stagger: 0.5,
 
 
     scrollTrigger: {
         trigger: ".newsroom",
-        toggleActions: "play none reset reverse",
+        toggleActions: "play none none reverse",
         start: "top center",
-        markers: true
+        // markers: true
     }
 });
 
