@@ -1,19 +1,51 @@
-// side navigation
+// loading screen animation
+// jQuery(document).ready(function($) {
+//     if (sessionStorage.getItem('loadingScreenSession') == null) {
+
+//         sessionStorage.setItem('loadingScreenSession', 'true');
+//     } else {
+//         var element = document.getElementById("my-loader");
+//         element.classList.add("d-none");
+//     }
+// });
+function disableScrolling() {
+
+    document.body.style.overflow = 'hidden';
+}
+
+function enableScrolling() {
+    document.body.style.overflow = 'visible';
+}
 $(document).ready(function() {
-    var tl = gsap.timeline({ paused: true });
-    tl.to("#navigationWrap", 0.4, { x: 0, opacity: 1, display: 'block', ease: "slow" });
-    tl.to(".navBtn", 0.2, { opacity: 0 });
-    tl.to(".close", 0.2, { display: "block", opacity: 1 });
-    tl.from(".menu", 0.3, { opacity: 0, y: 20, stagger: 0.1 });
-    $(".navBtn").click(function() {
-        tl.play();
-        tl.timeScale(1.2);
-    })
-    $(".close").click(function() {
-        tl.timeScale(3);
-        tl.reverse();
-    })
+
+
+    disableScrolling();
+    var tl = gsap.timeline({ defaults: { ease: "power1.out" } });
+    tl.to(".loaderSpan", { y: "0%", duration: 1.5, stagger: 0.25, delay: 0.5 })
+    tl.to(".loaderLogo", { opacity: 1, duration: 2, delay: 0.5 })
+    tl.to(".slider", { y: "-100%", duration: 1 })
+    tl.to(".loader", { y: "-100%", duration: 0.4, onComplete: enableScrolling }, "-=0.7")
+    tl.from(".heroContent", { y: 30, opacity: 0, duration: 0.4, stagger: 0.12, reversed: true }, "-=0.7")
+    tl.fromTo(".navbar, .navBtn, #logo_one", { opacity: 0 }, { opacity: 1, duration: 1 }, "-=0.2");
+
+
 });
+// side navigation
+// $(document).ready(function() {
+//     var tl = gsap.timeline({ paused: true });
+//     tl.to("#navigationWrap", 0.4, { x: 0, opacity: 1, display: 'block', ease: "slow" });
+//     tl.to(".navBtn", 0.2, { opacity: 0 });
+//     tl.to(".close", 0.2, { display: "block", opacity: 1 });
+//     tl.from(".menu", 0.3, { opacity: 0, y: 20, stagger: 0.1 });
+//     $(".navBtn").click(function() {
+//         tl.play();
+//         tl.timeScale(1.2);
+//     })
+//     $(".close").click(function() {
+//         tl.timeScale(3);
+//         tl.reverse();
+//     })
+// });
 
 // intro div about us
 $(document).ready(function() {
@@ -29,30 +61,29 @@ $(document).ready(function() {
         tl.play();
         tl.timeScale(1);
         disableScrolling();
-        document.body.style.overflow = 'hidden';
+        // document.body.style.overflow = 'hidden';
 
 
     })
     $(".closeIntro").click(function() {
         tl.timeScale(5);
         tl.reverse();
-        document.body.style.overflow = 'visible';
+        // document.body.style.overflow = 'visible';
 
         enableScrolling();
 
     })
     // enable-disable scrolling---------------------------------
-    function disableScrolling() {
-        var x = window.scrollX;
-        var y = window.scrollY;
-        window.onscroll = function() { window.scrollTo(x, y); };
+    // function disableScrolling() {
+    //     var x = window.scrollX;
+    //     var y = window.scrollY;
+    //     window.onscroll = function() { window.scrollTo(x, y); };
 
-    }
+    // }
 
-    function enableScrolling() {
-        window.onscroll = function() {};
-    }
-
+    // function enableScrolling() {
+    //     window.onscroll = function() {};
+    // }
 
 });
 
@@ -389,50 +420,6 @@ tl.from(".view_more", {
     ease: "power1.out",
     stagger: 0.2
 }, "-=1");
-
-
-
-// loading screen animation
-// jQuery(document).ready(function($) {
-//     if (sessionStorage.getItem('loadingScreenSession') == null) {
-
-//         sessionStorage.setItem('loadingScreenSession', 'true');
-//     } else {
-//         var element = document.getElementById("my-loader");
-//         element.classList.add("d-none");
-//     }
-// });
-
-$(document).ready(function() {
-    disableScrolling();
-    var tl = gsap.timeline({ defaults: { ease: "power1.out" } });
-    tl.to(".loaderSpan", { y: "0%", duration: 1.5, stagger: 0.25, delay: 0.5 })
-    tl.to(".loaderLogo", { opacity: 1, duration: 2, delay: 0.5 })
-    tl.to(".slider", { y: "-100%", duration: 1 })
-    tl.to(".loader", { y: "-100%", duration: 0.4, onComplete: enableScrolling }, "-=0.7")
-    tl.from(".heroContent", { y: 30, opacity: 0, duration: 0.4, stagger: 0.12, reversed: true }, "-=0.7")
-    tl.fromTo(".navbar, .navBtn, #logo_one", { opacity: 0 }, { opacity: 1, duration: 1 }, "-=0.2");
-    // tl.timeScale(8);
-
-
-    function disableScrolling() {
-        var x = window.scrollX;
-        var y = window.scrollY;
-        window.onscroll = function() { window.scrollTo(x, y); };
-        document.body.style.overflow = 'hidden';
-    }
-
-    function enableScrolling() {
-        window.onscroll = function() {};
-        document.body.style.overflow = 'visible';
-    }
-
-
-
-});
-
-
-
 
 
 // case studies
