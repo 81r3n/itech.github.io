@@ -404,18 +404,6 @@ tl.from(".view_more", {
 // });
 
 $(document).ready(function() {
-
-    function disableScrolling() {
-        var x = window.scrollX;
-        var y = window.scrollY;
-        window.onscroll = function() { window.scrollTo(x, y); };
-        // document.body.style.overflow = 'hidden';
-    }
-
-    function enableScrolling() {
-        window.onscroll = function() {};
-        // document.body.style.overflow = 'visible';
-    }
     disableScrolling();
     var tl = gsap.timeline({ defaults: { ease: "power1.out" } });
     tl.to(".loaderSpan", { y: "0%", duration: 1.5, stagger: 0.25, delay: 0.5 })
@@ -425,6 +413,20 @@ $(document).ready(function() {
     tl.from(".heroContent", { y: 30, opacity: 0, duration: 0.4, stagger: 0.12, reversed: true }, "-=0.7")
     tl.fromTo(".navbar, .navBtn, #logo_one", { opacity: 0 }, { opacity: 1, duration: 1 }, "-=0.2");
     // tl.timeScale(8);
+
+
+    function disableScrolling() {
+        var x = window.scrollX;
+        var y = window.scrollY;
+        window.onscroll = function() { window.scrollTo(x, y); };
+        document.body.style.overflow = 'hidden';
+    }
+
+    function enableScrolling() {
+        window.onscroll = function() {};
+        document.body.style.overflow = 'visible';
+    }
+
 
 
 });
