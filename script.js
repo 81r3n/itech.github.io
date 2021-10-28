@@ -407,7 +407,6 @@ tl.from(".fadeIn2", {
     opacity: 0,
     y: 50,
     // ease: "elastic.out(0.8, 0.4)",
-    //change here
     ease: "power1.out",
     stagger: 0.30
 }, "-=1");
