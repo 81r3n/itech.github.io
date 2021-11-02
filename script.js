@@ -46,7 +46,7 @@ jQuery(document).ready(function($) {
 
 // intro div about us
 $(document).ready(function() {
-    var tl = gsap.timeline({ paused: true });
+    var tl = gsap.timeline({ paused: true, onReverseComplete: enableScrolling });
     tl.to(".intro", 0.5, { opacity: 1, display: 'block', ease: "power1" });
     tl.fromTo(".introLogo", { opacity: 0, scale: 2 }, { opacity: 1, duration: 1.5, scale: 1, ease: "linear" }, "-=1");
     tl.to(".text", { y: "0%", opacity: 1, duration: 0.5, stagger: 0.2, ease: "power1.out" });
@@ -65,7 +65,6 @@ $(document).ready(function() {
         tl.timeScale(5);
         tl.reverse();
 
-        enableScrolling();
 
     })
     // enable-disable scrolling---------------------------------
@@ -98,98 +97,7 @@ $(document).ready(function() {
 //     })
 // });
 
-//buttons
-$(document).ready(function() {
-    console.clear();
-    document.querySelector(".myBtn").addEventListener("mouseenter", doCoolStuff);
-    document.querySelector(".myBtn").addEventListener("mouseleave", doCoolStuff);
-    const tl = new TimelineMax();
-    tl.to(".myBtn rect", 0.9, { attr: { width: 210 }, opacity: 0.8, ease: Elastic.easeOut.config(1, 1) });
-    tl.to(".myBtn text", 0.2, { fill: "#fff", ease: Linear.easeNone }, 0.);
-    tl.reversed(true);
 
-    function doCoolStuff() {
-        tl.reversed(!tl.reversed());
-    }
-});
-$(document).ready(function() {
-    console.clear();
-    document.querySelector(".myBtn2").addEventListener("mouseenter", doCoolStuff);
-    document.querySelector(".myBtn2").addEventListener("mouseleave", doCoolStuff);
-    const tl = new TimelineMax();
-    tl.to(".myBtn2 rect", 1, { attr: { width: 230 }, opacity: 0.8, ease: Elastic.easeOut.config(1, 1) });
-    tl.to(".myBtn2 text", 0.2, { fill: "#fff", ease: Linear.easeNone }, 0.);
-    tl.reversed(true);
-
-    function doCoolStuff() {
-        tl.reversed(!tl.reversed());
-    }
-});
-$(document).ready(function() {
-    console.clear();
-    document.querySelector(".myBtn3").addEventListener("mouseenter", doCoolStuff);
-    document.querySelector(".myBtn3").addEventListener("mouseleave", doCoolStuff);
-    const tl = new TimelineMax();
-    tl.to(".myBtn3 rect", 1, { attr: { width: 230 }, opacity: 0.8, ease: Elastic.easeOut.config(1, 1) });
-    tl.to(".myBtn3 text", 0.2, { fill: "#fff", ease: Linear.easeNone }, 0.);
-    tl.reversed(true);
-
-    function doCoolStuff() {
-        tl.reversed(!tl.reversed());
-    }
-});
-$(document).ready(function() {
-    console.clear();
-    document.querySelector(".myBtn4").addEventListener("mouseenter", doCoolStuff);
-    document.querySelector(".myBtn4").addEventListener("mouseleave", doCoolStuff);
-    const tl = new TimelineMax();
-    tl.to(".myBtn4 rect", 1, { attr: { width: 230 }, opacity: 0.8, ease: Elastic.easeOut.config(1, 1) });
-    tl.to(".myBtn4 text", 0.2, { fill: "#fff", ease: Linear.easeNone }, 0.);
-    tl.reversed(true);
-
-    function doCoolStuff() {
-        tl.reversed(!tl.reversed());
-    }
-});
-$(document).ready(function() {
-    console.clear();
-    document.querySelector(".myBtn5").addEventListener("mouseenter", doCoolStuff);
-    document.querySelector(".myBtn5").addEventListener("mouseleave", doCoolStuff);
-    const tl = new TimelineMax();
-    tl.to(".myBtn5 rect", 1, { attr: { width: 230 }, opacity: 0.8, ease: Elastic.easeOut.config(1, 1) });
-    tl.to(".myBtn5 text", 0.2, { fill: "#fff", ease: Linear.easeNone }, 0.);
-    tl.reversed(true);
-
-    function doCoolStuff() {
-        tl.reversed(!tl.reversed());
-    }
-});
-$(document).ready(function() {
-    console.clear();
-    document.querySelector(".myBtn6").addEventListener("mouseenter", doCoolStuff);
-    document.querySelector(".myBtn6").addEventListener("mouseleave", doCoolStuff);
-    const tl = new TimelineMax();
-    tl.to(".myBtn6 rect", 1, { attr: { width: 230 }, opacity: 0.8, ease: Elastic.easeOut.config(1, 1) });
-    tl.to(".myBtn6 text", 0.2, { fill: "#fff", ease: Linear.easeNone }, 0.);
-    tl.reversed(true);
-
-    function doCoolStuff() {
-        tl.reversed(!tl.reversed());
-    }
-});
-$(document).ready(function() {
-    console.clear();
-    document.querySelector(".myBtn-p").addEventListener("mouseenter", doCoolStuff);
-    document.querySelector(".myBtn-p").addEventListener("mouseleave", doCoolStuff);
-    const tl = new TimelineMax();
-    tl.to(".myBtn-p rect", 1, { attr: { width: 177 }, opacity: 0.8, ease: Elastic.easeOut.config(1, 1) });
-    tl.to(".myBtn-p text", 0.2, { fill: "#fff", ease: Linear.easeNone }, 0.);
-    tl.reversed(true);
-
-    function doCoolStuff() {
-        tl.reversed(!tl.reversed());
-    }
-});
 
 // hero sec animations when scroll down
 gsap.registerPlugin(ScrollTrigger);
@@ -236,23 +144,23 @@ gsap.to(".heroContent", {
 
 
 // navigation appear on scroll
-// gsap.to("#navbarLight", {
-//     duration: 0.5,
-//     ease: "power3",
-//     opacity: 1,
-//     yPercent: "100",
+gsap.to("#navbarLight", {
+    duration: 0.5,
+    ease: "power3",
+    opacity: 1,
+    yPercent: "100",
 
-//     scrollTrigger: {
-//         // markers: true,
-//         trigger: ".sec1",
-//         // scrub: 1,
-//         toggleActions: "play none none reverse",
+    scrollTrigger: {
+        // markers: true,
+        trigger: ".sec1",
+        // scrub: 1,
+        toggleActions: "play none none reverse",
 
-//         start: "-115px center ",
-//         endTrigger: ".sec1",
-//         end: "center 80%"
-//     }
-// });
+        start: "-115px center ",
+        endTrigger: ".sec1",
+        end: "center 80%"
+    }
+});
 
 
 //section 2 - services animation
