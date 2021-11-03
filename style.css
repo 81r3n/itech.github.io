@@ -41,6 +41,7 @@ p {
     font-weight: 600;
     font-size: 40px;
     letter-spacing: 2px;
+    color: #545454;
 
 
 }
@@ -74,13 +75,13 @@ p {
     margin: 0 10px;
     transition: transform 300ms ease-out;
     font-size: 14px;
-    font-weight: 200;
+    font-weight: 300;
 }
 
 .navbar-dark .navbar-nav .nav-link:focus,
 .navbar-dark .navbar-nav .nav-link:hover {
     /*color: rgba(255, 255, 255, 0.75);*/
-    color: #f5c36f;
+    color: #dcdcdc;
 }
 
 .nav-item {
@@ -95,7 +96,7 @@ p {
     margin: 0 10px;
     transition: transform 300ms ease-out;
     font-size: 14px;
-    font-weight: 200;
+    font-weight: 400;
 
 
 }
@@ -103,7 +104,7 @@ p {
 .navbar-light .navbar-nav .nav-link:focus,
 .navbar-light .navbar-nav .nav-link:hover {
     /*color: rgba(0, 0, 0, 0.6);*/
-    color: #d5a046;
+    color: #ad482d;
 
 }
 
@@ -285,8 +286,7 @@ nav a:hover {
     -webkit-transition: .4s;
     transition: .3s;
     text-decoration: none;
-    font-size: 25px;
-    margin-top: 39px;
+    font-size: 20px;
 }
 
 .social i:hover {
@@ -542,8 +542,7 @@ figure {
 }
 
 .snip1584:hover i.iservice {
-    color: #1d1d2c;
-    color: #465ba4;
+    color: #ad482d;
 
 
 }
@@ -579,7 +578,7 @@ figure {
     text-align: center;
     font-size: 13px;
     line-height: 1.6;
-    font-weight: 400;
+    font-weight: 500;
     color: #eba63f;
 
 }
@@ -611,7 +610,7 @@ a.tileClick {
 .snip1584:hover h5,
 .snip1584.hover h5 {
 
-    color: #465ba4;
+    color: #ad482d;
 }
 
 
@@ -845,9 +844,15 @@ right: 0;
 
 .case_study_card:hover {
     box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
-    transform: scale(1.07);
+    transform: scale(1.04);
     background-color: #ddf2fb;
 
+
+}
+
+.case_study_card h3 {
+
+    color: #545454;
 
 }
 
@@ -859,7 +864,7 @@ a.cstudy {
 
 a.cstudy:hover {
 
-    color: #eba63f;
+    color: #ad482d;
 }
 
 .socialContainer {
@@ -970,6 +975,7 @@ footer p {
     text-decoration: none;
     color: #d2d2d2;
     transition: color 300ms ease;
+    font-size: 13px;
 }
 
 footer a:hover {
@@ -1110,7 +1116,7 @@ a.view_more_btn:hover {
     content: "";
     width: 0%;
     height: 2px;
-    background-color: #eba63f;
+    background-color: #ad482d;
     transition: all 0.5s;
 }
 
@@ -1185,6 +1191,54 @@ a.view_more_btn:hover {
 .owl-carousel .owl-stage {
     transition-timing-function: linear !important;
 }
+
+.owl-carousel.owl-2 .owl-dots.disabled,
+.owl-carousel.owl-2 .owl-nav.disabled {
+    display: block !important;
+}
+
+.owl-carousel.owl-2 .owl-nav button.owl-next {
+    position: absolute;
+    z-index: 2000;
+    top: 50%;
+    right: -50px;
+    border-radius: 0;
+    background: #ff5e14;
+    display: block;
+    outline: 0;
+    width: 34px;
+    line-height: 34px;
+    height: 34px;
+    color: #fff;
+    font-size: 23px;
+    margin-top: -20px;
+    transition: all 0.3s ease-in-out;
+
+
+
+
+}
+
+.owl-carousel.owl-2 .owl-nav button.owl-prev {
+    position: absolute;
+    z-index: 2000;
+    top: 50%;
+    left: -50px;
+    border-radius: 0;
+    background: #ff5e14;
+    display: block;
+    outline: 0;
+    width: 34px;
+    line-height: 34px;
+    height: 34px;
+    color: #fff;
+    font-size: 23px;
+    margin-top: -20px;
+    transition: all 0.3s ease-in-out;
+
+
+}
+
 
 /* RESPONSIVE */
 

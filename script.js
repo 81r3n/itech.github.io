@@ -373,38 +373,6 @@ gsap.to(".fa-angle-up", { duration: 1, repeat: -1, yoyo: true, y: 11 });
 // });
 
 
-// horizontal scrolling - case study cards
-let scroll_tl = gsap.timeline({
-        scrollTrigger: {
-            trigger: '.factsContainer',
-            start: "top center",
-            // pin: true,
-            scrub: true,
-            end: "+=500",
-            // markers: true,
-        }
-    }),
-    facts = [...document.querySelectorAll('.fact')]
-scroll_tl.to('.factsContainer h2', {
-    scale: 1.5,
-    duration: 1,
-    ease: "slow"
-})
-scroll_tl.to(facts, {
-    xPercent: -80 * (facts.length - 1),
-    scrollTrigger: {
-        trigger: ".factsContainer_sm",
-        start: "center center",
-        pin: true,
-        // horizontal: true,
-        // markers: true,
-        scrub: 1,
-        // base vertical scrolling on how wide the container is so it feels more natural.
-        // end: () => `+=${smallFactsContainer.offsetWidth}`
-        end: () => `+=4320`
-    }
-});
-
 
 // partners
 gsap.registerPlugin(ScrollTrigger);
@@ -516,8 +484,9 @@ gsap.to("#logo2", {
 gsap.from(".newsContainer", {
     duration: 2,
     // backgroundColor: "#dbf5f7",
-    opacity: 0,
     y: 50,
+    opacity: 0,
+
     ease: "power3.out",
     stagger: 0.5,
 
@@ -529,6 +498,22 @@ gsap.from(".newsContainer", {
         // markers: true
     }
 });
+
+gsap.from(".caseOwl", {
+    duration: 2,
+    // backgroundColor: "#dbf5f7",
+    opacity: 0,
+    y: 50,
+    ease: "power3.out",
+
+
+    scrollTrigger: {
+        trigger: ".caseStudy",
+        toggleActions: "play none none reverse",
+        start: "top center"
+    }
+});
+
 
 
 
@@ -544,6 +529,25 @@ $(document).ready(function() {
         autoplay: true,
         autoplayTimeout: 3000,
         items: 6
+    })
+    $('.owl-2').owlCarousel({
+        loop: false,
+        dots: false,
+        nav: true,
+        smartSpeed: 700,
+        items: 3,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 1
+            },
+            1000: {
+                items: 3,
+                nav: true
+            }
+        }
     })
 
 });
