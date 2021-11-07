@@ -534,8 +534,9 @@ $(document).ready(function() {
         loop: false,
         dots: false,
         nav: true,
-        smartSpeed: 700,
-        items: 3,
+        smartSpeed: 1000,
+        items: 4,
+        animateOut: 'fadeOut',
         responsive: {
             0: {
                 items: 1
@@ -544,7 +545,7 @@ $(document).ready(function() {
                 items: 1
             },
             1000: {
-                items: 3,
+                items: 4,
                 nav: true
             }
         }
