@@ -146,7 +146,7 @@ gsap.to(".heroContent", {
 // navigation appear on scroll
 gsap.to("#navbarLight", {
     duration: 0.5,
-    ease: "power3",
+    ease: "power3.out",
     opacity: 1,
     yPercent: "100",
 
