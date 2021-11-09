@@ -337,20 +337,6 @@ tl.from(".view_more", {
 //         scrub: 2
 //     });
 // });
-var tl = gsap.timeline({
-    scrollTrigger: {
-        trigger: ".pinWrapper",
-        start: "top 35%",
-        scrub: 1
-    }
-});
-tl.fromTo(".titleCaseStudy", { opacity: 0, y: "-50" }, {
-    duration: 3,
-    ease: "power3.out",
-    opacity: 3,
-    scale: 1.5
-});
-
 
 
 // scroll to top
@@ -535,19 +521,29 @@ $(document).ready(function() {
         dots: false,
         nav: true,
         smartSpeed: 1000,
-        items: 4,
+        items: 1,
         animateOut: 'fadeOut',
         responsive: {
             0: {
                 items: 1
             },
-            600: {
+            576: {
                 items: 1
             },
-            1000: {
-                items: 4,
-                nav: true
+
+            768: {
+                items: 2,
+            },
+
+            1200: {
+
+                items: 3
+            },
+            1400: {
+
+                items: 4
             }
+
         }
     })
 

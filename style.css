@@ -474,7 +474,7 @@ margin-left: -30px;*/
     position: relative;
     display: inline-block;
     overflow: hidden;
-    width: 180px;
+    width: 165px;
     height: 150px;
     color: #ffffff;
     font-size: 16px;
@@ -763,24 +763,6 @@ right: 0;
     opacity: 0;
 }
 
-/*case studies*/
-.pinWrapper {
-    height: 100vh;
-    width: 100%;
-}
-
-.pinPanel {
-    height: 100%;
-    width: 100%;
-}
-
-.animatePanel {
-
-    opacity: 0;
-    transform: scale(0.9);
-}
-
-/*case studies*/
 .wrapper {
     min-height: 100vh;
     background: rgba(21, 48, 72, 1.0);
