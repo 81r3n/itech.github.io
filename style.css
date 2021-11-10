@@ -11,9 +11,7 @@
 
 html,
 body {
-
     scroll-behavior: smooth;
-
 }
 
 /* Typography –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -37,13 +35,10 @@ p {
 }
 
 .non-hero h2 {
-
     font-weight: 600;
     font-size: 40px;
     letter-spacing: 2px;
     color: #545454;
-
-
 }
 
 .sub-header {
@@ -63,7 +58,6 @@ p {
     font-size: 13px;
     text-align: center;
     color: #e3e3e3;
-
 }
 
 /* Typography end –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -97,15 +91,12 @@ p {
     transition: transform 300ms ease-out;
     font-size: 14px;
     font-weight: 400;
-
-
 }
 
 .navbar-light .navbar-nav .nav-link:focus,
 .navbar-light .navbar-nav .nav-link:hover {
     /*color: rgba(0, 0, 0, 0.6);*/
     color: #ad482d;
-
 }
 
 /*intro div about us*/
@@ -324,7 +315,6 @@ color: #c52518;
 
 /*side navigation end*/
 /*buttons*/
-
 .snip1417 {
     border: none;
     background-color: #ad482d;
@@ -332,7 +322,6 @@ color: #c52518;
     color: #ffffff;
     cursor: pointer;
     padding: 0px 25px;
-
     line-height: 46px;
     font-weight: 300;
     font-size: 1em;
@@ -388,7 +377,6 @@ color: #c52518;
     transform: translateX(0%);
     opacity: 0.20;
 }
-
 
 /*scroll-down-icon animation*/
 .chevron {
@@ -485,8 +473,6 @@ margin-left: -30px;*/
 .snip1584:hover {
     box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15);
     transform: scale(1.02);
-
-
 }
 
 figure {
@@ -516,13 +502,10 @@ figure {
 }
 
 .snip1584:hover:before {
-
     border: 2px #e8e3e0 solid;
     background-color: #fff;
     border: 2px rgba(255, 255, 255, 0) solid;
 }
-
-
 
 .snip1584 img {
     vertical-align: top;
@@ -537,16 +520,11 @@ figure {
     margin-bottom: 8px;
     font-size: 22px;
     color: #eba63f;
-
-
 }
 
 .snip1584:hover i.iservice {
     color: #ad482d;
-
-
 }
-
 
 .snip1584 figcaption {
     position: absolute;
@@ -580,9 +558,7 @@ figure {
     line-height: 1.6;
     font-weight: 500;
     color: #eba63f;
-
 }
-
 
 .snip1584 h5 {
     font-weight: normal;
@@ -604,15 +580,12 @@ a.tileClick {
     z-index: 1;
 }
 
-
 .snip1584:hover h3,
 .snip1584.hover h3,
 .snip1584:hover h5,
 .snip1584.hover h5 {
-
     color: #ad482d;
 }
-
 
 .snip1584:hover h5,
 .snip1584.hover h5 {
@@ -621,12 +594,10 @@ a.tileClick {
 }
 
 .snip1584 figcaption i {
-
     font-size: 24px;
 }
 
 /*sections*/
-
 /* products and services - Tile cards*/
 @import url(https://fonts.googleapis.com/css?family=Poppins:300);
 
@@ -776,17 +747,15 @@ right: 0;
 .factsContainer {
     padding: 6em 2em;
     line-height: 10vh;
-
 }
 
 /*.factsContainer h2 {
-    font-size: 1.8em;
-    transform: scale(0);
-    padding: 2em 0em;
-    margin-bottom: 15vh;
-    color: #F0C368;
+font-size: 1.8em;
+transform: scale(0);
+padding: 2em 0em;
+margin-bottom: 15vh;
+color: #F0C368;
 }*/
-
 .factsContainer p {
     color: #8d8d8d;
     font-size: 14px;
@@ -801,48 +770,36 @@ right: 0;
     display: flex;
     width: 300vw;
     justify-content: center;
-
 }
 
 .fact {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
-
-
 .case_study_card {
-
     background-color: #fff;
     padding: 30px 12px;
     border-radius: 10px;
     transition: all 0.4s;
     width: 100%;
-
 }
 
 .case_study_card:hover {
     box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
     transform: scale(1.04);
     background-color: #ebebeb;
-
-
 }
 
 .case_study_card h3 {
-
     color: #545454;
     font-size: 20px;
-
 }
 
 .case_study_card p {
-
     color: grey;
     font-size: 13px;
-
 }
 
 a.cstudy {
@@ -852,7 +809,6 @@ a.cstudy {
 }
 
 a.cstudy:hover {
-
     color: #ad482d;
 }
 
@@ -862,20 +818,16 @@ a.cstudy:hover {
 }
 
 /*news room / blog*/
-
 figure.snip1208 {
     color: #fff;
     position: relative;
     overflow: hidden;
-
     background-color: #d69533;
     color: #000000;
     text-align: left;
     font-size: 16px;
     border-radius: 10px;
 }
-
-
 
 figure.snip1208 img {
     max-width: 100%;
@@ -890,7 +842,6 @@ figure.snip1208 figcaption {
     padding: 25px;
     position: relative;
 }
-
 
 figure.snip1208 h3,
 figure.snip1208 p {
@@ -912,7 +863,6 @@ figure.snip1208 p {
     margin-bottom: 20px;
     line-height: 1.6em;
     color: #e7e7e7;
-
 }
 
 figure.snip1208 button {
@@ -942,8 +892,6 @@ figure.snip1208.hover img {
     filter: grayscale(110%);
 }
 
-
-
 figure.snip1208:hover button,
 figure.snip1208.hover button {
     background-color: #9c640e;
@@ -951,16 +899,11 @@ figure.snip1208.hover button {
 
 /*footer*/
 footer h3 {
-
     color: #c9c9c9;
-
 }
-
-
 
 footer a,
 footer p {
-
     text-decoration: none;
     color: #d2d2d2;
     transition: color 300ms ease;
@@ -968,18 +911,14 @@ footer p {
 }
 
 footer a:hover {
-
     color: #fff;
-
 }
 
 .newsblock a {
-
     text-decoration: none;
 }
 
 .newsroom i {
-
     color: #fff;
     font-size: 20px;
     position: relative;
@@ -987,35 +926,23 @@ footer a:hover {
 }
 
 .newsblock:hover i {
-
     left: 15px;
     color: #f9c77c;
-
-
 }
 
 .newsblock p {
-
     color: #fff;
     font-size: 14px;
     transition: color ease 300ms;
-
-
 }
 
 .newsblock:hover p {
-
     color: #dfdfdf;
-
-
 }
 
 /*news room end*/
-
 /*verticals cards*/
-
 /* CARDS */
-
 .cards {
     display: flex;
     flex-wrap: wrap;
@@ -1044,8 +971,6 @@ footer a:hover {
     background-color: #fff;
 }
 
-
-
 .card__link {
     position: relative;
     text-decoration: none;
@@ -1053,7 +978,6 @@ footer a:hover {
 }
 
 .card__link:hover a {
-
     color: #fbc36e;
 }
 
@@ -1066,9 +990,6 @@ footer a:hover {
     color: #eba63f;
 }
 
-
-
-
 .view_more_btn {
     position: relative;
 }
@@ -1077,24 +998,19 @@ footer a:hover {
     position: relative;
     text-decoration: none;
     color: rgba(255, 255, 255, 0.7);
-
 }
 
 .card__icon i {
     font-size: 24px;
-
 }
 
-
 a.view_more_btn {
-
     text-decoration: none;
     color: #d8d3d2;
     font-size: 13px;
 }
 
 a.view_more_btn:hover {
-
     color: #fbc36e;
 }
 
@@ -1114,7 +1030,6 @@ a.view_more_btn:hover {
 }
 
 .view_more_btn::after {
-
     position: absolute;
     top: 25px;
     left: 0;
@@ -1123,16 +1038,11 @@ a.view_more_btn:hover {
     height: 2px;
     background-color: #fbc36e;
     transition: all 0.5s;
-
-
 }
 
 .view_more_btn:hover::after {
     width: 100%;
 }
-
-
-
 
 .card__icon {
     grid-row: 2/3;
@@ -1151,11 +1061,9 @@ a.view_more_btn:hover {
     grid-row: 4/5;
     align-self: center;
     font-size: 13px;
-
 }
 
 /* CARD BACKGROUNDS */
-
 .card-1 {
     background: radial-gradient(#1fe4f5, #3fbafe);
 }
@@ -1202,10 +1110,6 @@ a.view_more_btn:hover {
     font-size: 23px;
     margin-top: -20px;
     transition: all 0.3s ease-in-out;
-
-
-
-
 }
 
 .owl-carousel.owl-2 .owl-nav button.owl-prev {
@@ -1224,15 +1128,64 @@ a.view_more_btn:hover {
     font-size: 23px;
     margin-top: -20px;
     transition: all 0.3s ease-in-out;
-
-
 }
 
-
 /* RESPONSIVE */
-
 @media (max-width: 1600px) {
     .cards {
         justify-content: center;
     }
+}
+
+/*testimonial section*/
+
+.testimonial-bg {
+    transition: all ease 1500ms;
+}
+
+.testimonial:hover .testimonial-bg {
+
+    transform: scale(1.1);
+
+}
+
+.client-words {
+    background-color: #f3f3f3;
+    bottom: -75px;
+    color: #000;
+    max-width: 420px;
+    padding: 30px;
+    position: absolute;
+    right: 7%;
+    text-align: left;
+}
+
+.client-words h5 {
+    font-size: 18px;
+    margin-bottom: 18px;
+}
+
+.image-caption {
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: 200;
+    color: #fff;
+    position: absolute;
+    left: 25px;
+    bottom: 20px;
+    transition: all 0.5s ease;
+    transition-duration: 1s;
+}
+
+.client-photo {
+    display: inline-block;
+    float: left;
+    height: 80px !important;
+    margin-right: 10px;
+    width: 80px !important;
+}
+
+.client-speak {
+    font-size: 15px;
+    font-weight: 300;
 }

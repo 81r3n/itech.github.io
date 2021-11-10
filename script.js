@@ -478,23 +478,56 @@ gsap.from(".newsContainer", {
 
 
     scrollTrigger: {
-        trigger: ".newsroom",
+        trigger: ".newsContainer",
         toggleActions: "play none none reverse",
-        start: "top center",
-        // markers: true
+        start: "center 60%",
+        markers: true
     }
 });
-
-gsap.from(".caseOwl", {
+// case study cards
+gsap.from(".caseOwlitem, .titleCaseStudy", {
     duration: 2,
     // backgroundColor: "#dbf5f7",
     opacity: 0,
     y: 50,
     ease: "power3.out",
+    stagger: 0.2,
 
 
     scrollTrigger: {
-        trigger: ".caseStudy",
+        trigger: ".titleCaseStudy",
+        toggleActions: "play none none reverse",
+        start: "top center"
+    }
+});
+
+// 
+// testimonial section
+
+gsap.from("#titleImageFade", {
+    duration: 2,
+    // backgroundColor: "#dbf5f7",
+    opacity: 0,
+    ease: "power3.out",
+
+
+    scrollTrigger: {
+        trigger: ".testimonial",
+        toggleActions: "play none none reverse",
+        start: "top center"
+    }
+});
+gsap.from("#clientWords", {
+    duration: 1,
+    // backgroundColor: "#dbf5f7",
+    opacity: 0,
+    x: 50,
+    ease: "power1.out",
+    delay: 0.5,
+
+
+    scrollTrigger: {
+        trigger: ".testimonial",
         toggleActions: "play none none reverse",
         start: "top center"
     }
@@ -504,8 +537,10 @@ gsap.from(".caseOwl", {
 
 
 
+
 // owl carousel
 $(document).ready(function() {
+    // partners
 
     $('.owl-1').owlCarousel({
         loop: true,
@@ -516,6 +551,7 @@ $(document).ready(function() {
         autoplayTimeout: 3000,
         items: 6
     })
+    // case studies
     $('.owl-2').owlCarousel({
         loop: false,
         dots: false,
@@ -545,6 +581,14 @@ $(document).ready(function() {
             }
 
         }
+    })
+    // testimonial
+    $('.owl-3').owlCarousel({
+        loop: true,
+        dots: true,
+        nav: false,
+        smartSpeed: 1000,
+        items: 1
     })
 
 });
