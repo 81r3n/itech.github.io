@@ -510,14 +510,12 @@ gsap.from("#titleImageFade", {
     opacity: 0,
     scale: 0.8,
     ease: "power3.out",
-    delay: 0.5,
 
 
     scrollTrigger: {
         trigger: ".testimonialSection",
         toggleActions: "play none none reverse",
-        start: "top center",
-        markers: 'true'
+        start: "top center"
     }
 });
 gsap.from("#clientWords", {
