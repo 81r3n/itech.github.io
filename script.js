@@ -470,11 +470,12 @@ gsap.to("#logo2", {
 gsap.from(".newsContainer", {
     duration: 2,
     // backgroundColor: "#dbf5f7",
-    y: 50,
+    scale: 0.8,
     opacity: 0,
 
     ease: "power3.out",
-    stagger: 0.5,
+    stagger: 0.4,
+    delay: 0.5,
 
 
     scrollTrigger: {
@@ -525,7 +526,7 @@ gsap.from("#clientWords", {
     opacity: 0,
     x: 50,
     ease: "power1.out",
-    delay: 1,
+    delay: 0.8,
 
 
     scrollTrigger: {
