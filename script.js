@@ -480,8 +480,7 @@ gsap.from(".newsContainer", {
     scrollTrigger: {
         trigger: ".newsContainer",
         toggleActions: "play none none reverse",
-        start: "center 60%",
-        markers: true
+        start: "center 60%"
     }
 });
 // case study cards
@@ -508,13 +507,16 @@ gsap.from("#titleImageFade", {
     duration: 2,
     // backgroundColor: "#dbf5f7",
     opacity: 0,
+    scale: 0.8,
     ease: "power3.out",
+    delay: 0.5,
 
 
     scrollTrigger: {
-        trigger: ".testimonial",
+        trigger: ".testimonialSection",
         toggleActions: "play none none reverse",
-        start: "top center"
+        start: "top center",
+        markers: 'true'
     }
 });
 gsap.from("#clientWords", {
@@ -523,7 +525,7 @@ gsap.from("#clientWords", {
     opacity: 0,
     x: 50,
     ease: "power1.out",
-    delay: 0.5,
+    delay: 1,
 
 
     scrollTrigger: {
