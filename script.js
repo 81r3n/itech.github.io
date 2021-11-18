@@ -578,7 +578,7 @@ $(document).ready(function() {
             },
             1400: {
 
-                items: 4
+                items: 3
             }
 
         }
