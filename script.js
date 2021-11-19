@@ -149,8 +149,6 @@ gsap.to("#navbarLight", {
     ease: "power3.out",
     opacity: 1,
     yPercent: "100",
-    top: 0,
-
     scrollTrigger: {
         // markers: true,
         trigger: ".sec1",
