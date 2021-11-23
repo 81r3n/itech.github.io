@@ -114,37 +114,9 @@ gsap.to(".heroContent", {
         end: "bottom top"
     }
 });
-// gsap.to(".navbar-brand", {
-//     duration: 0.5,
-
-//     ease: "power3.out",
-
-//     y: 40,
-
-//     scrollTrigger: {
-//         scrub: 2,
-//         trigger: ".heroContent",
-//         start: "top top",
-//         end: "bottom top"
-//     }
-// });
-// gsap.to(".navBtn", {
-//     duration: 1,
-//     backgroundColor: "#2b3a5c",
-//     ease: "power1",
-//     scrollTrigger: {
-//         trigger: ".sec1",
-//         scrub: 1,
-//         start: "115px 20% ",
-//         endTrigger: ".sec1",
-//         end: "center 80%",
-//         // markers: true
-//     }
-// });
-
 
 // navigation appear on scroll
-gsap.to("#navbarLight", {
+gsap.to(".navbarLight", {
     duration: 0.5,
     ease: "power3.out",
     opacity: 1,
@@ -210,33 +182,6 @@ gsap.from("#servicesVector", {
 
     }
 });
-// section 2 animation end
-
-
-//sections scroll snapping hero section
-// let sections = gsap.utils.toArray(".panel");
-// gsap.to(sections, {
-//     ease: "power1",
-//     duration: 3,
-//     scrollTrigger: {
-//         trigger: ".panel",
-//         // scrub: true,
-//         snap: 2 / (sections.length - 2),
-//         // markers: true
-//     }
-// });
-// gsap.registerPlugin(ScrollTrigger);
-// gsap.utils.toArray(".panel").forEach((panel, i) => {
-//     ScrollTrigger.create({
-//         trigger: panel,
-//         start: "center 40%",
-//         // markers: "true",
-//         ease: "power1"
-//     });
-// });
-// ScrollTrigger.create({
-//     snap: 1 / 4 // snap whole page to the closest section!
-// });
 
 
 
@@ -325,143 +270,10 @@ tl.from(".view_more", {
 }, "-=1");
 
 
-// case studies
-// gsap.registerPlugin(ScrollTrigger);
-// gsap.utils.toArray(".pinPanel").forEach((panel, i) => {
-//     ScrollTrigger.create({
-//         trigger: panel,
-//         start: "top top",
-//         pin: true,
-//         pinSpacing: false,
-//         scrub: 2
-//     });
-// });
 
 
 // scroll to top
 gsap.to(".fa-angle-up", { duration: 1, repeat: -1, yoyo: true, y: 11 });
-
-
-// dynamically set animation for new divs
-// gsap.utils.toArray(".animatePanel").forEach((animatePanel, i) => {
-//     gsap.to(animatePanel, {
-//         ease: "power3.out",
-//         scale: 1,
-//         duration: 3,
-//         opacity: 1,
-//         scrollTrigger: {
-//             trigger: animatePanel,
-//             start: "top 80%",
-//             toggleActions: "restart reset restart none"
-//         }
-//     });
-// });
-
-
-
-// partners
-gsap.registerPlugin(ScrollTrigger);
-
-gsap.to("#logo", {
-    duration: 0.1,
-    // backgroundColor: "#dbf5f7",
-    opacity: 0,
-
-
-    scrollTrigger: {
-        trigger: "#partner",
-        toggleActions: "play none reset reverse",
-        start: "center center",
-        end: "bottom bottom",
-        // markers: true
-    }
-});
-gsap.to("#logo2", {
-    duration: 0.1,
-    // backgroundColor: "#dbf5f7",
-    opacity: 1,
-
-
-    scrollTrigger: {
-        trigger: "#partner",
-        toggleActions: "play none reset reverse",
-        start: "center center",
-        end: "bottom bottom",
-        // markers: true
-    }
-});
-gsap.to("#logo", {
-    duration: 0.1,
-    ease: "power3.out",
-    opacity: 1,
-    scrollTrigger: {
-        trigger: ".case_study_card",
-        start: "top bottom",
-        toggleActions: "restart reverse reverse reverse"
-        // markers: "true"
-    }
-
-});
-gsap.to("#logo2", {
-    duration: 0.1,
-    ease: "power3.out",
-    opacity: 0,
-    scrollTrigger: {
-        trigger: ".case_study_card",
-        start: "top bottom",
-        toggleActions: "restart reverse reverse reverse"
-        // markers: "true"
-    }
-
-});
-// gsap.to("#logo", {
-//     duration: 0.1,
-//     ease: "power3.out",
-//     opacity: 0,
-//     scrollTrigger: {
-//         trigger: ".newsroom",
-//         start: "center center",
-//         toggleActions: "restart reverse reverse reverse"
-//         // markers: "true"
-//     }
-
-// });
-// gsap.to("#logo2", {
-//     duration: 0.1,
-//     ease: "power3.out",
-//     opacity: 1,
-//     scrollTrigger: {
-//         trigger: ".newsroom",
-//         start: "center center",
-//         toggleActions: "restart reverse reverse reverse"
-//         // markers: "true"
-//     }
-
-// });
-gsap.to("#logo", {
-    duration: 0.1,
-    ease: "power3.out",
-    opacity: 1,
-    scrollTrigger: {
-        trigger: ".footer",
-        start: "center center",
-        toggleActions: "restart reverse reverse reset"
-        // markers: "true"
-    }
-
-});
-gsap.to("#logo2", {
-    duration: 0.1,
-    ease: "power3.out",
-    opacity: 0,
-    scrollTrigger: {
-        trigger: ".footer",
-        start: "center center",
-        toggleActions: "restart reverse reverse reset"
-        // markers: "true"
-    }
-
-});
 
 // news room
 
@@ -478,29 +290,12 @@ gsap.from(".newsContainer", {
 
 
     scrollTrigger: {
-        trigger: ".newsContainer",
+        trigger: ".newsroom",
         toggleActions: "play none none reverse",
-        start: "center 60%"
-    }
-});
-// case study cards
-gsap.from(".caseOwlitem, .titleCaseStudy", {
-    duration: 2,
-    // backgroundColor: "#dbf5f7",
-    opacity: 0,
-    y: 50,
-    ease: "power3.out",
-    stagger: 0.2,
-
-
-    scrollTrigger: {
-        trigger: ".titleCaseStudy",
-        toggleActions: "play none none reverse",
-        start: "top center"
+        start: "top 60%"
     }
 });
 
-// 
 // testimonial section
 
 gsap.from("#titleImageFade", {
@@ -534,6 +329,25 @@ gsap.from("#clientWords", {
 });
 
 
+// case study cards
+gsap.from(".caseOwlitem, .titleCaseStudy", {
+    duration: 2,
+    // backgroundColor: "#dbf5f7",
+    opacity: 0,
+    y: 50,
+    ease: "power3.out",
+    stagger: 0.2,
+
+
+    scrollTrigger: {
+        trigger: ".titleCaseStudy",
+        toggleActions: "play none none reverse",
+        start: "top 60%",
+
+    }
+});
+
+
 
 
 
@@ -556,7 +370,7 @@ $(document).ready(function() {
         loop: false,
         dots: false,
         nav: true,
-        smartSpeed: 1000,
+        smartSpeed: 500,
         items: 1,
         animateOut: 'fadeOut',
         responsive: {
