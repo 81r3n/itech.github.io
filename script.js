@@ -1,3 +1,14 @@
+$(document).ready(function() {
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 400) {
+            $('.navbarLight').fadeIn(500);
+        } else {
+            $('.navbarLight').fadeOut(300);
+        }
+    });
+
+});
+
 function disableScrolling() {
 
     document.body.style.overflow = 'hidden';
@@ -116,22 +127,22 @@ gsap.to(".heroContent", {
 });
 
 // navigation appear on scroll
-gsap.to(".navbarLight", {
-    duration: 0.5,
-    ease: "power3.out",
-    opacity: 1,
-    yPercent: "100",
-    scrollTrigger: {
-        // markers: true,
-        trigger: ".sec1",
-        // scrub: 1,
-        toggleActions: "play none none reverse",
+// gsap.to(".navbarLight", {
+//     duration: 0.5,
+//     ease: "power3.out",
+//     opacity: 1,
+//     yPercent: "100",
+//     scrollTrigger: {
+//         // markers: true,
+//         trigger: ".sec1",
+//         // scrub: 1,
+//         toggleActions: "play none none reverse",
 
-        start: "-115px center ",
-        endTrigger: ".sec1",
-        end: "center 80%"
-    }
-});
+//         start: "-115px center ",
+//         endTrigger: ".sec1",
+//         end: "center 80%"
+//     }
+// });
 
 
 //section 2 - services animation
@@ -348,10 +359,6 @@ gsap.from(".caseOwlitem, .titleCaseStudy", {
 });
 
 
-
-
-
-
 // owl carousel
 $(document).ready(function() {
     // partners
@@ -364,6 +371,15 @@ $(document).ready(function() {
         autoplay: true,
         autoplayTimeout: 3000,
         items: 6
+    })
+    $('.owl-approach').owlCarousel({
+        loop: true,
+        dots: false,
+        nav: false,
+        smartSpeed: 4000,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        items: 4
     })
     // case studies
     $('.owl-2').owlCarousel({
