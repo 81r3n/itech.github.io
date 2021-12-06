@@ -549,6 +549,7 @@ figure {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 10px;
 }
 
 .snip1584 h3,
@@ -566,7 +567,7 @@ figure {
     -webkit-transition-delay: 0.05s;
     transition-delay: 0.05s;
     text-align: center;
-    font-size: 13px;
+    font-size: 11px;
     line-height: 1.6;
     font-weight: 500;
     color: #eba63f;
@@ -1298,3 +1299,18 @@ figure.snip0045:hover .position span .fas {
 
 
 /*team members end*/
+
+.services .modal-header h3 {
+
+    font-size: 21px;
+
+
+}
+
+
+.services .modal-body p {
+
+    font-size: 14px;
+
+
+}
