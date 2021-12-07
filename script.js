@@ -1,7 +1,7 @@
 $(document).ready(function() {
     $(window).scroll(function() {
         if ($(this).scrollTop() > 400) {
-            $('.navbarLight').fadeIn(500);
+            $('.navbarLight').fadeIn(300);
         } else {
             $('.navbarLight').fadeOut(300);
         }
