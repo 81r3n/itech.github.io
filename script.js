@@ -372,6 +372,7 @@ $(document).ready(function() {
         autoplayTimeout: 3000,
         items: 6
     })
+    // our approach
     $('.owl-approach').owlCarousel({
         loop: true,
         dots: false,
