@@ -6,6 +6,7 @@ $(document).ready(function() {
             $('.navbarLight').fadeOut(300);
         }
     });
+    AOS.init();
 
 });
 
@@ -27,7 +28,7 @@ jQuery(document).ready(function($) {
         tl.to(".loaderSpan", { y: "0%", duration: 1.5, stagger: 0.25, delay: 0.5 })
         tl.to(".loaderLogo", { opacity: 1, duration: 2, delay: 0.5 })
         tl.to(".slider", { y: "-100%", duration: 1 })
-        tl.to(".loader", { y: "-100%", duration: 0.4, onComplete: enableScrolling }, "-=0.7")
+        tl.to(".loader", { y: "-200%", duration: 0.4, onComplete: enableScrolling }, "-=0.7")
         tl.from(".heroContent", { y: 30, opacity: 0, duration: 0.4, stagger: 0.12, reversed: true }, "-=0.7")
         tl.fromTo(".navbar, .navBtn, #logo_one", { opacity: 0 }, { opacity: 1, duration: 1 }, "-=0.2");
 
@@ -167,7 +168,7 @@ gsap.from(".fadeIn", {
     opacity: 0,
     y: 50,
     ease: "power1.out",
-    stagger: 0.2,
+    stagger: 0.1,
     scrollTrigger: {
         trigger: ".sec1",
         // scrub: 2,
